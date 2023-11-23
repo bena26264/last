@@ -39,7 +39,7 @@ def predict():
     input_query = np.array([[Service,Flag,DifficultyLevel,protocol_type,Src_bytes,Dst_bytes,srv_count,diff_srv_rate,same_srv_rate,dst_host_diff_srv_rate
                                 ,dst_host_srv_diff_host_rate,dst_host_same_src_port_rate,dst_host_serror_rate,dst_host_srv_serror_rate]])
     result = model.predict(input_query)[0]
-
+#hello
 
 
     return jsonify({'xAttack':str(result)})
